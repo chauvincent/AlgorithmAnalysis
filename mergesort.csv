@@ -1,0 +1,11 @@
+Sample Number,Language,Time,Number of Recursive Calls,Number of Transitions,Number of Compares
+0,Java,real	0m0.091s, 44761, 190158, 834972
+1,Java,real	0m0.091s, 44761, 190158, 834995
+2,Java,real	0m0.091s, 44761, 190158, 835362
+3,Java,real	0m0.105s, 44761, 190158, 834624
+4,Java,real	0m0.105s, 44761, 190158, 834868
+5,Java,real	0m0.101s, 44761, 190158, 835130
+6,Java,real	0m0.099s, 44761, 190158, 834343
+7,Java,real	0m0.104s, 44761, 190158, 835449
+8,Java,real	0m0.095s, 44761, 190158, 835160
+9,Java,real	0m0.095s, 44761, 190158, 835184

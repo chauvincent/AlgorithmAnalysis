@@ -1,0 +1,11 @@
+Sample Number,Language,Time,Number of Partitioning Stages,Number of Exchanges,Number of Compares
+0,Java,real	0m0.420s, 42203274, 6400, 42424802
+1,Java,real	0m0.419s, 78619528, 2205, 78740143
+2,Java,real	0m0.530s, 79620492, 6452, 151041035
+3,Java,real	0m0.519s, 86582135, 1294, 86743936
+4,Java,real	0m0.621s, 92770101, 6339, 197999655
+5,Java,real	0m0.425s, 50044908, 4962, 50105436
+6,Java,real	0m0.448s, 84381389, 1540, 84735505
+7,Java,real	0m0.405s, 53287806, 4964, 54344028
+8,Java,real	0m0.389s, 57903426, 4169, 57969182
+9,Java,real	0m0.448s, 68219019, 3717, 69383574

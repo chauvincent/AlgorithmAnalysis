@@ -1,0 +1,21 @@
+Citations:
+
+For copy and pasting the base code of Mergesort and Quicksort:
+- Analysis of Algorithms by Robert Sedgewick and Phillipe Flajolet
+
+Bash Scripting: Usage of grep to parse
+- http://stackoverflow.com/questions/8119585/parsing-string-with-grep
+
+Usage of Time
+- http://unix.stackexchange.com/questions/12068/how-to-measure-time-of-program-execution-and-store-that-inside-a-variable
+
+For mimicking Rob's sanity check script:
+
+Professor Gysel's sanity_check_select.sh
+- https://drive.google.com/a/ucdavis.edu/folderview?id=0B62PKOKHzPzsYi1tc2lYWDJmczA&usp=sharing&tid=0B62PKOKHzPzsQV9NNjZLd2NVYjg
+
+Also copy and pasting some of Rob's 4_11_BashScripting examples:
+- https://drive.google.com/a/ucdavis.edu/folderview?id=0B62PKOKHzPzsQWhtMnRleTNGMUU&usp=sharing&tid=0B62PKOKHzPzsQV9NNjZLd2NVYjg
+
+Insertion Sort Reference:
+https://www.seas.gwu.edu/~drum/cs1112/lectures/module3/module3.html

@@ -1,0 +1,121 @@
+import java.util.Random;
+import java.util.Vector;
+import java.io.IOException;
+import java.util.Scanner;
+import java.io.*;
+
+class QuickSortStats
+{
+    static int k = 0;
+    static int numPartitions = 0;
+    static int numExchanges = 0;
+    static int numCompares = 0;
+
+    public static void main(String [] args)
+    {
+    	Vector<Integer> v = new Vector<>();
+
+        Scanner scanner = null;
+        try
+        {
+            String filename = args[1];
+            scanner = new Scanner(new File(filename));
+        } catch (FileNotFoundException e)
+        {
+        	System.exit(1);	
+        }	
+        while (scanner.hasNext())
+        {
+        	if(scanner.hasNextInt())
+        	{
+        		v.add(scanner.nextInt());
+        	}
+        	else
+        	{
+        		scanner.next();
+        	}
+        }
+        int[] a = new int[v.size()];
+        int count = 0;
+
+		for (int i = 0; i < v.size(); i++)
+		{
+			a[i] = ((Integer)v.elementAt(i)).intValue();
+		}
+      
+   	    int low = 0;
+        int high = a.length - 1;
+        k = Integer.parseInt(args[0]);
+
+        numPartitions++;
+        quicksort(a,low,high);
+        
+        System.out.println("Number of Inputs: " + a.length);
+        System.out.println("Partitioning Stages: " + numPartitions);
+        System.out.println("Exchanges: " + numExchanges);
+        System.out.println("Compares Stages: " + numCompares);   
+    }
+    public static void quicksort(int[] a, int lo, int hi)
+    {
+        if (hi - lo <= k)
+        {
+            numCompares++;
+            insertionSort(a);
+        }
+        else
+        {
+            numCompares++;
+            if (hi <= lo) 
+                return;
+            
+            int i = lo-1, j = hi;
+            int t; // v = a[hi];
+            int v = new Random().nextInt(a[hi] + 1);
+            while (true)
+            {
+                while (a[++i] < v){
+                    numCompares++;
+                } ;
+            
+                while (v < a[--j]){
+                    numCompares++;
+                    if (j == lo) 
+                        break;
+                    numCompares++;
+                } 
+                numCompares++;
+                if (i >= j) 
+                    break;
+                numExchanges++;
+                t = a[i]; 
+                a[i] = a[j]; 
+                a[j] = t;
+            }
+            numExchanges++;
+            t = a[i]; 
+            a[i] = a[hi]; 
+            a[hi] = t;
+
+            numPartitions++;
+            quicksort(a, lo, i-1);
+            numPartitions++;
+            quicksort(a, i+1, hi);
+        }
+    }
+    public static void insertionSort(int[] a)
+    {
+      int i, j, temp;
+      for (i = 1; i < a.length; i++)
+      {
+          numCompares++;
+          for (j = i; j > 0 && a[j-1] > a[j]; j--)
+          {
+              numCompares++;
+              numPartitions++;
+              temp = a[j];
+              a[j] = a[j-1];
+              a[j-1] = temp;
+          }
+      }
+    }
+}
